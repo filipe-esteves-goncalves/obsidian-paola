@@ -11,14 +11,17 @@
             "id": "83c12bbe17906381",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Flashcards/Design Principles Flashcard.md",
-                "mode": "source",
-                "source": false
+                "file": "Design Patterns/Design Patterns - Strategy.canvas",
+                "viewState": {
+                  "x": 962.4162586206887,
+                  "y": 181.0634310344827,
+                  "zoom": -1.5989893859934416
+                }
               },
-              "icon": "lucide-file",
-              "title": "Design Principles Flashcard"
+              "icon": "lucide-layout-dashboard",
+              "title": "Design Patterns - Strategy"
             }
           }
         ]
@@ -205,22 +208,22 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "83c12bbe17906381",
+  "active": "7ac84c46f7a393f3",
   "lastOpenFiles": [
-    "Note.md",
-    "OOP/Object Oriented Programming (OOP).canvas",
-    "Programming Principles - clean code.canvas",
-    "OOP",
     "Design Patterns/Design Patterns.canvas",
-    "Flashcards/Design Principles Flashcard.md",
-    "Flashcards",
-    "Simple Flashcard.md",
-    "Canvas.canvas",
-    "Design Patterns/Design Patterns - Strategy.canvas",
-    "images/Strategy pattern.png",
     "Swift/Swift.canvas",
-    "Design Patterns",
     "Swift/Code example.md",
+    "Programming Principles - clean code.canvas",
+    "Simple Flashcard.md",
+    "Note.md",
+    "Design Patterns/Design Patterns - Strategy.canvas",
+    "Canvas.canvas",
+    "Flashcards/Design Principles Flashcard.md",
+    "OOP/Object Oriented Programming (OOP).canvas",
+    "OOP",
+    "Flashcards",
+    "images/Strategy pattern.png",
+    "Design Patterns",
     "images/Swift logo.png",
     "Swift",
     "images",

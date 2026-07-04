@@ -41,7 +41,8 @@
 		{"id":"bace6a07017d677a","type":"text","text":"Design Patterns:\n- Catalog of Pattenrs\n- They Connect with flexibility","x":-108,"y":-960,"width":361,"height":140,"color":"1"},
 		{"id":"98a79b0c3544a5a3","type":"text","text":"Event","x":523,"y":520,"width":87,"height":60},
 		{"id":"f93af4fe03e29825","type":"text","text":"Monad pattern","x":-28,"y":723,"width":250,"height":60},
-		{"id":"c29464d63a1cbb26","type":"text","text":"Tactical Patterns","x":-658,"y":303,"width":165,"height":56}
+		{"id":"c29464d63a1cbb26","type":"text","text":"Tactical Patterns","x":-658,"y":303,"width":165,"height":56},
+		{"id":"d614fa437c50f25a","type":"text","text":"![[Design Patterns - Strategy.canvas]]","x":928,"y":-60,"width":250,"height":50}
 	],
 	"edges":[
 		{"id":"231227da1a626da1","fromNode":"aee24a1649d246f6","fromSide":"right","toNode":"262c337d47000151","toSide":"left"},
@@ -79,6 +80,7 @@
 		{"id":"64cce9da86472f84","fromNode":"4a4fdf6db1e84127","fromSide":"right","toNode":"7e9bd86d99fbbdb3","toSide":"left"},
 		{"id":"8ae02f40c73e9b63","fromNode":"4a4fdf6db1e84127","fromSide":"right","toNode":"1a4c6f434a08c539","toSide":"left"},
 		{"id":"96b40af691d2642a","fromNode":"4a4fdf6db1e84127","fromSide":"left","toNode":"c30dade5bc8e5c99","toSide":"right"},
-		{"id":"3afa2d77245e8888","fromNode":"4a4fdf6db1e84127","fromSide":"left","toNode":"103fa0bd41a98a1b","toSide":"right"}
+		{"id":"3afa2d77245e8888","fromNode":"4a4fdf6db1e84127","fromSide":"left","toNode":"103fa0bd41a98a1b","toSide":"right"},
+		{"id":"e3d7f37255966ca3","fromNode":"4a4fdf6db1e84127","fromSide":"right","toNode":"d614fa437c50f25a","toSide":"left"}
 	]
 }
