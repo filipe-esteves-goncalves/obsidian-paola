@@ -13,15 +13,61 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": ".obsidian/plugins/obsidian-spaced-repetition/data.json",
-                "bFile": ".obsidian/plugins/obsidian-spaced-repetition/data.json",
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "title": "Diff: workspace.json  (Working Tree)"
+            }
+          },
+          {
+            "id": "adf23ba4761e4afd",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "OOP/Object Oriented Programming (OOP).canvas",
+                "viewState": {
+                  "x": 283.9352318418653,
+                  "y": 214.80951109754918,
+                  "zoom": -1.4969065070358964
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Object Oriented Programming (OOP)"
+            }
+          },
+          {
+            "id": "f747fea8f74f4a19",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
+            }
+          },
+          {
+            "id": "74c4e6dfb84ec33f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Swift/Code example.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Code example"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -205,25 +251,34 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "83c12bbe17906381",
+  "active": "630366f4b1e49b08",
   "lastOpenFiles": [
-    "Note.md",
-    "Flashcards/Design Principles Flashcard.md",
-    "OOP/Object Oriented Programming (OOP).canvas",
-    "Programming Principles - clean code.canvas",
-    "OOP",
-    "Design Patterns/Design Patterns.canvas",
-    "Flashcards",
-    "Simple Flashcard.md",
-    "Canvas.canvas",
-    "Design Patterns/Design Patterns - Strategy.canvas",
-    "images/Strategy pattern.png",
     "Swift/Swift.canvas",
-    "Design Patterns",
     "Swift/Code example.md",
+    "Interview/Betsson Group/Untitled.canvas",
+    "Interview/Betsson Group/Untitled.md",
+    "Canvas.canvas",
+    "Programming Principles - clean code.canvas",
+    "Simple Flashcard.md",
+    "Note.md",
+    "Interview/Betsson Group",
+    "Interview",
+    "Design Patterns/Design Patterns - Strategy.canvas",
+    "Design Patterns/Design Patterns.canvas",
+    "conflict-files-obsidian-git.md",
+    "Swift/Swift.canvas~",
+    "OOP/Object Oriented Programming (OOP).canvas",
+    "Basic/Note.md",
+    "Basic",
+    "images/Strategy pattern.png",
     "images/Swift logo.png",
+    "Flashcards/Design Principles Flashcard.md",
+    "Interview/Betsson Group",
+    "Interview",
+    "OOP",
+    "Flashcards",
+    "Design Patterns",
     "Swift",
-    "images",
     "Welcome.md"
   ]
 }
