@@ -11,17 +11,14 @@
             "id": "2384bf64635d4423",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Canvas.canvas",
-                "viewState": {
-                  "x": 780,
-                  "y": -150,
-                  "zoom": -0.6187395127055806
-                }
+                "file": "Principles/Solid/Flashcard/Solid Flashcard.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Canvas"
+              "icon": "lucide-file",
+              "title": "Solid Flashcard"
             }
           }
         ]
@@ -208,12 +205,21 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "630366f4b1e49b08",
+  "active": "2384bf64635d4423",
   "lastOpenFiles": [
-    "Swift/Swift.canvas",
-    "Flashcard/Design Principles Flashcard.md",
-    "Architecture/Flashcard/Architecture.md",
+    "Solid Principles.md",
+    "Principles/Solid/Flashcard/Solid Flashcard.md",
+    "Programming Principles - clean code.canvas",
+    "Principles/Solid/Notes",
+    "Principles/Solid/Flashcard",
+    "Principles/Solid",
+    "Principles",
+    "OOP/Object Oriented Programming (OOP).canvas",
     "Interview/Betsson Group/Job description.canvas",
+    "Flashcard/Design Principles Flashcard.md",
+    "Swift/Swift.canvas",
+    "Canvas.canvas",
+    "Architecture/Flashcard/Architecture.md",
     "Architecture/Notes",
     "Architecture/Flashcard",
     "Architecture",
@@ -224,17 +230,10 @@
     "Git/Github pipeline/Notes",
     "Git/Github pipeline/Flashcard",
     "Git/Github pipeline",
-    "Git",
     "Firebase/Flashcard/Firebase Flashcard.md",
-    "Firebase/Notes",
-    "Firebase/Flashcard",
-    "Firebase",
-    "Programming Principles - clean code.canvas",
     "Note.md",
-    "Canvas.canvas",
     "Rest/HTTP Methods.md",
     "Rest/Flashcard/Rest.md",
-    "OOP/Object Oriented Programming (OOP).canvas",
     "Swift/Notes/Code example.md",
     "Interview/Betsson Group/Untitled.md",
     "Simple Flashcard.md",
