@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Liskov Substitution Principle.md",
+                "file": "Dependency Inversion Principle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Liskov Substitution Principle"
+              "title": "Dependency Inversion Principle"
             }
           },
           {
@@ -225,8 +225,10 @@
   "active": "2384bf64635d4423",
   "lastOpenFiles": [
     "Programming Principles - clean code.canvas",
-    "Liskov Substitution Principle.md",
+    "Dependency Inversion Principle.md",
     "Principles/Solid/Flashcard/Solid Flashcard.md",
+    "Interface Segregation Principle (ISP).md",
+    "Liskov Substitution Principle.md",
     "Open-closed Principle (OCP).md",
     "Principles/Solid/Notes/Solid Principles.md",
     "Principles/Solid/Notes/Single Responsability Principle?.md",
