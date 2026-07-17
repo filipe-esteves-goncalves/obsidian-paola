@@ -58,15 +58,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Swift/Swift.canvas",
+                "file": "Interview/Betsson Group/Job description.canvas",
                 "viewState": {
-                  "x": 250,
-                  "y": -316.5,
-                  "zoom": -0.5514099410101299
+                  "x": 901.9358999649996,
+                  "y": -998.283781246109,
+                  "zoom": -0.4400510878329549
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Swift"
+              "title": "Job description"
             }
           }
         ],
@@ -256,10 +256,12 @@
   },
   "active": "74c4e6dfb84ec33f",
   "lastOpenFiles": [
+    "Swift/Swift.canvas",
+    "Challenges/Betsson",
+    "Challenges",
     "Swift/Notes/Code example.md",
     "Swift/Notes",
-    "Swift/Swift.canvas",
-    "Interview/Betsson Group/Untitled.canvas",
+    "Interview/Betsson Group/Job description.canvas",
     "Swift/Flashcard",
     "Interview/Betsson Group/Untitled.md",
     "Canvas.canvas",
@@ -280,8 +282,6 @@
     "Flashcards/Design Principles Flashcard.md",
     "Interview/Betsson Group",
     "Interview",
-    "OOP",
-    "Flashcards",
     "Welcome.md"
   ]
 }
