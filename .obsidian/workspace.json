@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Principles/Solid/Notes/Single Responsability Principle?.md",
+                "file": "Open-closed Principle (OCP).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Single Responsability Principle?"
+              "title": "Open-closed Principle (OCP)"
             }
           }
         ]
@@ -207,10 +207,11 @@
   },
   "active": "2384bf64635d4423",
   "lastOpenFiles": [
-    "Principles/Solid/Notes/Solid Principles.md",
-    "Programming Principles - clean code.canvas",
-    "Principles/Solid/Notes/Single Responsability Principle?.md",
     "Principles/Solid/Flashcard/Solid Flashcard.md",
+    "Open-closed Principle (OCP).md",
+    "Principles/Solid/Notes/Solid Principles.md",
+    "Principles/Solid/Notes/Single Responsability Principle?.md",
+    "Programming Principles - clean code.canvas",
     "Principles/Solid/Notes",
     "Principles/Solid/Flashcard",
     "Principles/Solid",
