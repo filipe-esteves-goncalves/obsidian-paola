@@ -37,6 +37,7 @@ What are the Structural patterns?
 	- Proxy
 	- Decorator
 	- Bridge
+<!--SR:!2026-07-05,1,230-->
 
 What is the strategy pattern?
 What are the parts of it?
