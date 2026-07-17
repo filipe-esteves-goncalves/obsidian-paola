@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Principles/Solid/Flashcard/Solid Flashcard.md",
+                "file": "Interview/Betsson Group/Desafio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid Flashcard"
+              "title": "Desafio"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Principles/Solid/Flashcard/Solid Flashcard.md",
+                "file": "Interview/Betsson Group/Desafio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Solid Flashcard"
+              "title": "Backlinks for Desafio"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Principles/Solid/Flashcard/Solid Flashcard.md",
+                "file": "Interview/Betsson Group/Desafio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Solid Flashcard"
+              "title": "Outgoing links from Desafio"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Principles/Solid/Flashcard/Solid Flashcard.md",
+                "file": "Interview/Betsson Group/Desafio.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Solid Flashcard"
+              "title": "Outline of Desafio"
             }
           },
           {
@@ -190,7 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 211.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,6 +207,12 @@
   },
   "active": "c054ea87b437eeb4",
   "lastOpenFiles": [
+    "Interview/Betsson Group/Job description.canvas",
+    "Interview/Betsson Group/Senior_iOS_Interview_Task_(1).pdf",
+    "Interview/Betsson Group/Desafio.md",
+    "Senior_iOS_Interview_Task_(1).pdf",
+    "Principles/Solid/Flashcard/Solid Flashcard.md",
+    "Principles/Solid/Notes/Solid Principles.md",
     "Swift/Notes/Code example.md",
     "Swift/Notes",
     "Swift/Flashcard/Swift views and animations Flashcard.md",
@@ -217,18 +223,13 @@
     "Rest/HTTP Methods.md",
     "Rest/Flashcard",
     "Rest",
-    "Principles/Solid/Notes/Solid Principles.md",
     "Principles/Solid/Notes/Single Responsability Principle?.md",
-    "Principles/Solid/Flashcard/Solid Flashcard.md",
     "Principles/Solid/Notes",
     "Principles/Solid/Flashcard",
     "Principles/Solid",
     "Principles",
     "Open-closed Principle (OCP).md",
     "Liskov Substitution Principle.md",
-    "Interview/Betsson Group/Job description.canvas",
-    "Interview/Betsson Group",
-    "Interview",
     "Interface Segregation Principle (ISP).md",
     "Images/Swift logo.png",
     "Images/Strategy pattern.png",
