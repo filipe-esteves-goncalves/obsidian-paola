@@ -20,6 +20,23 @@
               "icon": "lucide-file",
               "title": "Liskov Substitution Principle"
             }
+          },
+          {
+            "id": "787421ef7d5f4732",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Programming Principles - clean code.canvas",
+                "viewState": {
+                  "x": 763.7613637852205,
+                  "y": -164.58691392437922,
+                  "zoom": -0.019073881021156702
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Programming Principles - clean code"
+            }
           }
         ]
       }
@@ -207,12 +224,12 @@
   },
   "active": "2384bf64635d4423",
   "lastOpenFiles": [
-    "Principles/Solid/Flashcard/Solid Flashcard.md",
+    "Programming Principles - clean code.canvas",
     "Liskov Substitution Principle.md",
+    "Principles/Solid/Flashcard/Solid Flashcard.md",
     "Open-closed Principle (OCP).md",
     "Principles/Solid/Notes/Solid Principles.md",
     "Principles/Solid/Notes/Single Responsability Principle?.md",
-    "Programming Principles - clean code.canvas",
     "Principles/Solid/Notes",
     "Principles/Solid/Flashcard",
     "Principles/Solid",
