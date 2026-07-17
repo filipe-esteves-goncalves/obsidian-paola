@@ -1,0 +1,61 @@
+#flashcards/Firebase
+
+How does the Firebase SDK use Method Swizzling on iOS for Analytics and FCM, and why might a senior engineer choose to disable automatic swizzling in modular architectures?
+?
+Firebase uses method swizzling to automatically intercept `UIApplicationDelegate` callbacks (e.g., `application:didRegisterForRemoteNotificationsWithDeviceToken:`) without requiring manual boilerplate. In complex modular architectures or apps with multiple third-party libraries, swizzling can cause race conditions, duplicate handler executions, or unexpected side effects. Setting `FirebaseAppDelegateProxyEnabled` to `NO` in `Info.plist` disables swizzling, allowing developers to manually pass APNs tokens (`Messaging.messaging().apnsToken = deviceToken`) and route incoming remote notifications deterministically through explicit dependency injection.
+
+How does Cloud Firestore handle offline persistence and local mutations on iOS, and what memory or listener pitfalls must a senior engineer prevent?
+?
+Firestore uses an embedded SQLite database for local persistence. Local writes immediately update the cache and trigger snapshot listeners (`Source.cache`) before network acknowledgment (`Source.server`). Key pitfalls: 1) **Listener Leaks**: Failing to invoke `remove()` on `ListenerRegistration` handles when view controllers or SwiftUI views deinitialize creates persistent background memory/CPU leaks. 2) **Offline Transactions**: Firestore transactions require an active network connection and will fail offline; optimistic UI logic must handle offline retries separately. 3) **Unbounded Caches**: Large offline caches degrade query indexing performance—engineers should configure `MemoryCacheSettings` or `PersistentCacheSettings` explicitly.
+
+What is the execution pipeline for delivering an FCM payload to an iOS app, and how do you handle silent background pushes under Apple's power constraints?
+?
+Pipeline: 1) The app registers with `UNUserNotificationCenter` to get an APNs device token. 2) The token is mapped to an FCM Registration Token via `Messaging.messaging().apnsToken`. 3) The backend calls FCM APIs, which forward to Apple APNs via HTTP/2. 4) APNs delivers to the device. For silent/background updates, the payload must include `"content-available": 1` and the app must declare the `Background Modes -> Remote notifications` capability. Senior insight: iOS throttles background notifications via `BackgroundTask` energy budgets and low-power modes; silent pushes are non-guaranteed and must not be treated as reliable real-time triggers.
+
+How do Apple Privacy Manifests (iOS 17+) and App Tracking Transparency (ATT) impact Firebase Analytics, and how do you implement Privacy Consent Modes?
+?
+Under iOS 14.5+, tracking user behavior across third-party apps requires `ATTrackingManager` authorization; if denied, IDFA collection is blocked, and Firebase falls back to IDFV or anonymized signals. Under iOS 17+, developers must include Firebase’s embedded `PrivacyInfo.xcprivacy` declaring required-reason APIs (e.g., disk usage, system boot time). To comply dynamically with GDPR/CCPA, engineers must programmatically configure Firebase Consent Mode (`Analytics.setConsent([.analyticsStorage: .granted, .adStorage: .denied])`) based on user preferences before logging sensitive analytics events.
+
+How do you troubleshoot missing dSYM files for Crashlytics in modern iOS CI/CD build pipelines, and how can custom logging be leveraged without exposing PII?
+?
+Without symbolication files (dSYMs), Crashlytics renders raw memory addresses instead of Swift method stack traces. In CI/CD (e.g., Fastlane/GitHub Actions), build scripts must run the `/path/to/upload-symbols` binary post-compilation, passing generated dSYM bundles from build artifacts. For contextual debugging without violating PII guidelines: 1) Use `Crashlytics.crashlytics().record(error:)` for non-fatal errors. 2) Attach non-PII state via `setCustomValue(_:forKey:)` (e.g., current route, feature flag states). 3) Use `Crashlytics.crashlytics().log(_:)` to maintain an in-memory execution trace attached _only_ to crash reports. Avoid logging raw user emails or IP addresses.
+
+What are the core differences between `fetchAndActivate`, `fetch(withExpirationDuration:)`, and Realtime Remote Config on iOS, and how should you architect a thread-safe configuration provider?
+?
+`fetchAndActivate` retrieves and immediately applies remote parameters, which can cause abrupt UI layout shifts or inconsistent mid-session logic. `fetch(withExpirationDuration:)` fetches parameters into a local cache based on expiration rules, allowing controlled activation. Realtime Remote Config (`addOnConfigUpdateListener`) streams parameter updates over a persistent connection. Architecture: Wrap Remote Config behind an abstracted protocol (`ConfigurationProviding`). Fetch configs at app startup, store them in memory, and defer `activate()` calls to app restart or explicit navigation boundaries to maintain a deterministic UI state and allow protocol-based mocking in unit tests.
+
+How does Firebase In-App Messaging (FIAM) trigger messages on iOS, and how do you customize or intercept displays using the `InAppMessagingDisplay` protocol?
+?
+FIAM fetches active campaign specs on launch and listens to local `Analytics` events (e.g., `Analytics.logEvent("completed_purchase")`) to trigger message overlays. To bypass default Firebase UI components, implement a custom class conforming to the `InAppMessagingDisplay` protocol and assign it via `InAppMessaging.inAppMessaging().messageDisplayComponent = customDisplayHandler`. This delivers raw campaign data (title text, body, action URLs, raw image assets) directly to your app, enabling custom SwiftUI or UIKit modal rendering, custom deep-link routing, and custom telemetry before triggering dismiss/click callbacks.
+
+When designing a Firestore data model for a high-scale iOS app, how do you evaluate Subcollections versus Array fields inside a single Document?
+?
+**Array Fields**: Ideal for small, bounded sets of scalar values or lightweight structs (<100 elements) that are always read together with the parent document. Drawbacks: The entire document (up to 1MB) must be rewritten on update, and array elements cannot be queried individually with granular field indexing. **Subcollections**: Ideal for unbounded, growing data structures (e.g., `/users/{id}/orders/{orderId}`). Subcollections scale indefinitely, support granular compound queries, and allow partial fetching without paying the network/billing cost of downloading massive document payloads.
+
+How do you instrument custom execution traces and network metrics using Firebase Performance Monitoring on iOS, and what thread-safety rules apply?
+?
+Automatic instrumentation captures network requests (`URLSession`) and app start metrics. For custom code block tracking, instantiate a trace: `let trace = Performance.startTrace(name: "image_processing_time")`, run the operation, and invoke `trace.stop()`. For custom HTTP metrics, create an `HTTPMetric` instance manually, setting request headers, payload byte size, and HTTP response codes. Thread safety: Firebase Performance SDK methods are thread-safe, but a single `Trace` instance must be started once and stopped once across logical execution flows, regardless of whether execution jumps between background queues and the main thread.
+
+Why is direct usage of Firebase SDK singletons (e.g., `Firestore.firestore()`) considered an anti-pattern in modern Swift architectures, and how do you mock them for XCTest?
+?
+Direct reliance on Firebase singletons couples business logic tightly to a third-party framework, preventing parallel execution of XCTest unit tests without a live Firebase backend or complex network stubbing. Solution: Create domain-specific Swift protocols (e.g., `protocol AnalyticsService` or `protocol UserDatabaseRepository`). Inject these interfaces into ViewModels or Use Cases using Swift initializer injection or dependency injection containers. In production, provide concrete implementations that wrap Firebase calls; in test targets, supply mock/stub instances that track method calls in memory without initializing `FirebaseApp.configure()`.
+
+How does Firebase App Check protect backend infrastructure (Firestore/Storage) on iOS, and how does it integrate with Apple's `AppAttest` / `DeviceCheck`?
+?
+Firebase App Check prevents unauthorized clients, scraped API calls, or tampered app builds from accessing backend resources. On iOS, App Check uses Apple's native `AppAttest` (iOS 14+) or `DeviceCheck` framework to cryptographically verify that requests originate from an authentic, uncompromised iOS binary running on a genuine Apple device. The App Check SDK transparently attaches a short-lived attestation token to outbound Firebase requests. Firestore and Storage Security Rules evaluate `request.auth.token` to reject requests lacking valid attestation tokens.
+
+How do Firebase Crashlytics stack traces behave with Swift Async/Await and Actor concurrency on iOS, and how should async errors be logged?
+?
+Crashlytics automatically captures hardware signals (e.g., `EXC_BAD_ACCESS`) and uncaught exceptions occurring on threads within Swift's cooperative thread pool. However, logical task cancellations (`CancellationError`) or handled throwing functions inside async contexts do not crash the process and will not appear in Crashlytics automatically. To track these failures, non-fatal errors inside async `do-catch` blocks must be manually recorded using `Crashlytics.crashlytics().record(error:)`. Since actor execution jumps across threads, engineers should attach structured custom log keys prior to suspension points (`await`) to reconstruct state during crashes.
+
+With the deprecation of Firebase Dynamic Links, how should a senior iOS developer re-architect deep linking using native Apple Universal Links and Remote Config?
+?
+Transition from dynamic link domains to native Apple Universal Links hosted on your owned domain by publishing an `apple-app-site-association` (AASA) file at `[https://yourdomain.com/.well-known/apple-app-site-association](https://yourdomain.com/.well-known/apple-app-site-association)`. In iOS, handle links in `SceneDelegate` (`scene(_:continue:)`) or SwiftUI (`onOpenURL`). Use Firebase Remote Config to dynamically control deep-link routing flags, feature availability, or fallback web URLs without deploying binary updates. Route incoming URLs through a centralized, testable `DeepLinkRouter` module that parses query parameters and coordinates navigation.
+
+How do you implement efficient, real-time paginated lists in Firestore for SwiftUI/UIKit without causing listener duplication or excessive document reads?
+?
+Implement cursor-based pagination using `.start(afterDocument:)` combined with `.limit(to: pageSize)`. Avoid creating multiple persistent snapshot listeners for every fetched page, as this multiplies memory consumption and network costs. Instead, fetch historical pages using one-time `getDocuments(source: .server)` calls and maintain a _single_ `addSnapshotListener` attached exclusively to the active page or highest temporal boundary. Bind query results to a `UICollectionViewDiffableDataSource` or SwiftUI `Identifiable` list to perform smooth, performant UI updates without re-instantiating items.
+
+What is the role of a `UNNotificationServiceExtension` when handling Firebase Cloud Messaging (FCM) push notifications with rich media on iOS?
+?
+A `UNNotificationServiceExtension` is an independent target that runs in a background process given a ~30-second execution window before a remote push notification is displayed to the user. When an FCM payload contains `"mutable-content": 1` and a media URL (`fcm_options.image`), iOS routes the notification to the extension's `didReceive(_:withContentHandler:)` method. The extension downloads the image via `URLSession`, saves it locally to the temporary disk directory, wraps it in a `UNNotificationAttachment`, attaches it to the notification content, and passes it to the system display pipeline.

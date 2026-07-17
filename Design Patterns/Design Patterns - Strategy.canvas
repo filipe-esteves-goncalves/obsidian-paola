@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"ff7ad13815213d86","type":"file","file":"images/Strategy pattern.png","x":-60,"y":-520,"width":399,"height":196,"color":"5"},
+		{"id":"ff7ad13815213d86","type":"file","file":"Images/Strategy pattern.png","x":-60,"y":-520,"width":399,"height":196,"color":"5"},
 		{"id":"e137fa13c8ae3e35","type":"text","text":"# Strategy\n\n### Behavioral Pattern","x":-240,"y":-680,"width":287,"height":100,"color":"1"},
 		{"id":"a35d56551d38b823","type":"text","text":"Scenarios where Strategy is most effective:\n\n- **Encapsulating Algorithms:** It is ideal when a class has many behaviors that would otherwise appear as multiple conditional statements. Strategy moves these related conditional branches into their own classes.\n- **Managing Variants:** It allows for different variants of an algorithm, such as those reflecting different space/time trade-offs.\n- **Hiding Complexity:** It can hide complex, algorithm-specific data structures from the client.","x":-634,"y":-300,"width":973,"height":180},
 		{"id":"01533b753d9a8cd6","type":"text","text":"The pattern typically involves three participants:\n\n- Context: holds one or more implementations\n- Strategy interface\n- Strategy implementations of the interface\n","x":-516,"y":-502,"width":420,"height":160},

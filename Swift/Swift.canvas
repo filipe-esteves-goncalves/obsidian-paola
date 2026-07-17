@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"94cce4e375fb901c","type":"file","file":"images/Swift logo.png","x":-600,"y":-320,"width":400,"height":267},
+		{"id":"94cce4e375fb901c","type":"file","file":"Images/Swift logo.png","x":-600,"y":-320,"width":400,"height":267},
 		{"id":"5fd0141be0a6c75e","type":"text","text":"**Swift** (often just called \"iOS Swift\") is a powerful and intuitive programming language created by Apple specifically for building apps on their platforms: iOS (iPhones), macOS (Macs), watchOS (Apple Watches), and tvOS (Apple TVs).","x":-600,"y":-560,"width":400,"height":180},
 		{"id":"8c7902fe3350f53f","type":"file","file":"Swift/Notes/Code example.md","x":-20,"y":-580,"width":740,"height":520},
 		{"id":"a3cfd6180c54e0e3","type":"text","text":"# Structs are my balls","x":760,"y":-580,"width":340,"height":200}
