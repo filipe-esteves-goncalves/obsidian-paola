@@ -56,14 +56,17 @@
             "id": "74c4e6dfb84ec33f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Swift/Code example.md",
-                "mode": "source",
-                "source": false
+                "file": "Swift/Swift.canvas",
+                "viewState": {
+                  "x": 250,
+                  "y": -316.5,
+                  "zoom": -0.5514099410101299
+                }
               },
-              "icon": "lucide-file",
-              "title": "Code example"
+              "icon": "lucide-layout-dashboard",
+              "title": "Swift"
             }
           }
         ],
@@ -251,11 +254,13 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "630366f4b1e49b08",
+  "active": "74c4e6dfb84ec33f",
   "lastOpenFiles": [
+    "Swift/Notes/Code example.md",
+    "Swift/Notes",
     "Swift/Swift.canvas",
-    "Swift/Code example.md",
     "Interview/Betsson Group/Untitled.canvas",
+    "Swift/Flashcard",
     "Interview/Betsson Group/Untitled.md",
     "Canvas.canvas",
     "Programming Principles - clean code.canvas",
@@ -277,8 +282,6 @@
     "Interview",
     "OOP",
     "Flashcards",
-    "Design Patterns",
-    "Swift",
     "Welcome.md"
   ]
 }
