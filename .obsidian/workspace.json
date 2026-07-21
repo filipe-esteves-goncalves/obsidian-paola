@@ -13,12 +13,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Interview/Betsson Group/Desafio.md",
-                "bFile": "Interview/Betsson Group/Desafio.md",
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Desafio  (Working Tree)"
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -204,6 +204,8 @@
   },
   "active": "c054ea87b437eeb4",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Interview/Betsson Group/Suggestion.md",
     "Interview/Betsson Group/Desafio.md",
     "Interview/Betsson Group/Job description.canvas",
     "Interview/Betsson Group/Senior_iOS_Interview_Task_(1).pdf",
