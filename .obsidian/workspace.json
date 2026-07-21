@@ -13,12 +13,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
+                "aFile": "Interview/Betsson Group/Desafio.md",
+                "bFile": "Interview/Betsson Group/Desafio.md",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "title": "Diff: Desafio  (Working Tree)"
             }
           }
         ]
