@@ -4,30 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "94b3b5f5c800fb8f",
+        "id": "191a7a601d78d969",
         "type": "tabs",
         "children": [
           {
-            "id": "d04925fd5264177f",
+            "id": "c054ea87b437eeb4",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-<<<<<<< HEAD
                 "aFile": "Interview/Betsson Group/Desafio.md",
                 "bFile": "Interview/Betsson Group/Desafio.md",
                 "aRef": ""
               },
               "icon": "diff",
               "title": "Diff: Desafio  (Working Tree)"
-=======
-                "file": "Interview/Betsson Group/Suggestion.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Suggestion"
->>>>>>> origin/main
             }
           }
         ]
@@ -62,10 +53,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "stra",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -103,10 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-=======
-                "file": "Note.md",
->>>>>>> origin/main
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,11 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-<<<<<<< HEAD
               "title": "Backlinks"
-=======
-              "title": "Backlinks for Note"
->>>>>>> origin/main
             }
           },
           {
@@ -129,19 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-=======
-                "file": "Note.md",
->>>>>>> origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-<<<<<<< HEAD
               "title": "Outgoing links"
-=======
-              "title": "Outgoing links from Note"
->>>>>>> origin/main
             }
           },
           {
@@ -179,20 +154,12 @@
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-=======
-                "file": "Note.md",
->>>>>>> origin/main
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-<<<<<<< HEAD
               "title": "Outline"
-=======
-              "title": "Outline of Note"
->>>>>>> origin/main
             }
           },
           {
@@ -220,11 +187,7 @@
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
     "width": 317.5
-=======
-    "width": 300
->>>>>>> origin/main
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,57 +202,55 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "7ac84c46f7a393f3",
+  "active": "c054ea87b437eeb4",
   "lastOpenFiles": [
-<<<<<<< HEAD
     "Interview/Betsson Group/Desafio.md",
     "Interview/Betsson Group/Job description.canvas",
     "Interview/Betsson Group/Senior_iOS_Interview_Task_(1).pdf",
-=======
-    "Interview/Betsson Group/Senior_iOS_Interview_Task_(1).pdf",
-    "Interview/Betsson Group/Suggestion.md",
-    "Interview/Betsson Group/Job description.canvas",
-    "Interview/Betsson Group/Desafio.md",
-    "Interview/Betsson Group/Desafio 1.md",
->>>>>>> origin/main
     "Senior_iOS_Interview_Task_(1).pdf",
-    "Programming Principles - clean code.canvas",
-    "Dependency Inversion Principle.md",
     "Principles/Solid/Flashcard/Solid Flashcard.md",
-    "Interface Segregation Principle (ISP).md",
-    "Liskov Substitution Principle.md",
-    "Open-closed Principle (OCP).md",
     "Principles/Solid/Notes/Solid Principles.md",
+    "Swift/Notes/Code example.md",
+    "Swift/Notes",
+    "Swift/Flashcard/Swift views and animations Flashcard.md",
+    "Swift/Flashcard/Swift Scalable &  Flashcard.md",
+    "Swift/Flashcard/Swift Flashcard.md",
+    "Swift/Flashcard",
+    "Rest/Flashcard/Rest.md",
+    "Rest/HTTP Methods.md",
+    "Rest/Flashcard",
+    "Rest",
     "Principles/Solid/Notes/Single Responsability Principle?.md",
     "Principles/Solid/Notes",
     "Principles/Solid/Flashcard",
     "Principles/Solid",
     "Principles",
-    "OOP/Object Oriented Programming (OOP).canvas",
-    "Flashcard/Design Principles Flashcard.md",
-    "Swift/Swift.canvas",
-    "Canvas.canvas",
-    "Architecture/Flashcard/Architecture.md",
-    "Architecture/Notes",
-    "Architecture/Flashcard",
-    "Architecture",
-    "Swift/Flashcard/Swift Flashcard.md",
-    "Swift/Flashcard/Swift Scalable &  Flashcard.md",
-    "Swift/Flashcard/Swift views and animations Flashcard.md",
+    "Open-closed Principle (OCP).md",
+    "Liskov Substitution Principle.md",
+    "Interface Segregation Principle (ISP).md",
+    "Images/Swift logo.png",
+    "Images/Strategy pattern.png",
     "Git/Github pipeline/Flashcard/Github pipeline.md",
-    "Git/Github pipeline/Notes",
+    "Flashcard/Design Principles Flashcard.md",
     "Firebase/Flashcard/Firebase Flashcard.md",
-    "Note.md",
-    "Rest/HTTP Methods.md",
-    "Rest/Flashcard/Rest.md",
-    "Swift/Notes/Code example.md",
-    "Simple Flashcard.md",
+    "Dependency Inversion Principle.md",
+    "Architecture/Flashcard/Architecture.md",
+    "Untitled.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "2026-07-04.md",
+    "Flashcards/Design Principles Flashcard.md",
+    "images/Strategy pattern.png",
+    "images/Swift logo.png",
+    "OOP/Object Oriented Programming (OOP).canvas",
     "Design Patterns/Design Patterns - Strategy.canvas",
     "Design Patterns/Design Patterns.canvas",
-    "conflict-files-obsidian-git.md",
-    "Basic/Note.md",
-    "Images/Strategy pattern.png",
-    "Images/Swift logo.png",
+    "Swift/Swift.canvas",
+    "Swift/Code example.md",
+    "Programming Principles - clean code.canvas",
+    "Simple Flashcard.md",
+    "Note.md",
+    "Canvas.canvas",
     "Welcome.md"
   ]
 }
