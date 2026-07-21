@@ -11,14 +11,14 @@
             "id": "c054ea87b437eeb4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Interview/Betsson Group/Desafio.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Interview/Betsson Group/Desafio.md",
+                "bFile": "Interview/Betsson Group/Desafio.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Desafio"
+              "icon": "diff",
+              "title": "Diff: Desafio  (Working Tree)"
             }
           }
         ]
@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview/Betsson Group/Desafio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Desafio"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interview/Betsson Group/Desafio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Desafio"
+              "title": "Outgoing links"
             }
           },
           {
@@ -156,13 +154,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview/Betsson Group/Desafio.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Desafio"
+              "title": "Outline"
             }
           },
           {
@@ -190,7 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5
+    "width": 317.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,9 +204,9 @@
   },
   "active": "c054ea87b437eeb4",
   "lastOpenFiles": [
+    "Interview/Betsson Group/Desafio.md",
     "Interview/Betsson Group/Job description.canvas",
     "Interview/Betsson Group/Senior_iOS_Interview_Task_(1).pdf",
-    "Interview/Betsson Group/Desafio.md",
     "Senior_iOS_Interview_Task_(1).pdf",
     "Principles/Solid/Flashcard/Solid Flashcard.md",
     "Principles/Solid/Notes/Solid Principles.md",
